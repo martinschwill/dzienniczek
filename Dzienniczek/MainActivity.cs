@@ -39,9 +39,9 @@ namespace Dzienniczek
                 case Resource.Id.navigation_dashboard:
                     textMessage.SetText(Resource.String.title_dashboard);
                     return true;
-                case Resource.Id.navigation_notifications:
+                /*case Resource.Id.navigation_notifications:
                     textMessage.SetText(Resource.String.title_notifications);
-                    return true;
+                    return true;*/
             }
             return false;
         }

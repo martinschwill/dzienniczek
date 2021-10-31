@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -43,7 +44,12 @@ namespace Dzienniczek
                     textMessage.SetText(Resource.String.title_notifications);
                     return true;
                 case Resource.Id.navigation_history:
-                    textMessage.SetText(Resource.String.title_history);
+                    /*textMessage.SetText(Resource.String.title_history); */
+
+                    Intent intent = new Intent(this, typeof(HistoryActivity));
+                    StartActivity(intent);
+                    Finish(); 
+
                     return true; 
             }
             return false;

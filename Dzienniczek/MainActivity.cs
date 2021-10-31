@@ -32,6 +32,9 @@ namespace Dzienniczek
         }
         public bool OnNavigationItemSelected(IMenuItem item)
         {
+
+           
+
             switch (item.ItemId)
             {
                 case Resource.Id.navigation_home:
@@ -44,7 +47,7 @@ namespace Dzienniczek
                     textMessage.SetText(Resource.String.title_notifications);
                     return true;
                 case Resource.Id.navigation_history:
-                    /*textMessage.SetText(Resource.String.title_history); */
+                    
 
                     Intent intent = new Intent(this, typeof(HistoryActivity));
                     StartActivity(intent);
@@ -52,6 +55,9 @@ namespace Dzienniczek
 
                     return true; 
             }
+
+
+            
             return false;
         }
     }

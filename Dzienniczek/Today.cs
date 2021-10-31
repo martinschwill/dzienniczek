@@ -15,6 +15,7 @@ using Android.Widget;
 namespace Dzienniczek
 {
     public class Today : Fragment
+
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
